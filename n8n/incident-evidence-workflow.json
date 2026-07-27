@@ -1,0 +1,27 @@
+{
+  "name": "Incident Evidence Timeline (inactive template)",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {"httpMethod": "POST", "path": "incident-evidence", "responseMode": "lastNode"},
+      "id": "webhook",
+      "name": "Receive Incident Evidence",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [260, 300]
+    },
+    {
+      "parameters": {"command": "incident-timeline /controlled-input/incident.json"},
+      "id": "evaluate",
+      "name": "Build Deterministic Timeline",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [560, 300]
+    }
+  ],
+  "connections": {
+    "Receive Incident Evidence": {"main": [[{"node": "Build Deterministic Timeline", "type": "main", "index": 0}]]}
+  },
+  "settings": {"executionOrder": "v1"}
+}
+
