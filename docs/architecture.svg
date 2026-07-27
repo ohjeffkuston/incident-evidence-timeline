@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#08111f"/><stop offset="1" stop-color="#10233c"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-opacity="0.25"/></filter>
+  </defs>
+  <rect width="1400" height="800" rx="28" fill="url(#bg)"/>
+  <text x="90" y="105" fill="#f8fafc" font-family="Arial, sans-serif" font-size="42" font-weight="700">Incident Evidence Timeline</text>
+  <text x="90" y="150" fill="#94a3b8" font-family="Arial, sans-serif" font-size="22">Deterministic chronology before AI-assisted incident analysis</text>
+  <g filter="url(#shadow)">
+    <rect x="90" y="235" width="300" height="310" rx="22" fill="#132b46" stroke="#2e5b83"/>
+    <rect x="550" y="235" width="300" height="310" rx="22" fill="#123b3c" stroke="#2f7d78"/>
+    <rect x="1010" y="235" width="300" height="310" rx="22" fill="#302454" stroke="#6d55a3"/>
+  </g>
+  <text x="240" y="290" text-anchor="middle" fill="#60a5fa" font-family="Arial" font-size="25" font-weight="700">Evidence sources</text>
+  <text x="240" y="350" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="21">Cloud alerts</text>
+  <text x="240" y="395" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="21">Deployment events</text>
+  <text x="240" y="440" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="21">Service-desk impact</text>
+  <text x="700" y="290" text-anchor="middle" fill="#5eead4" font-family="Arial" font-size="25" font-weight="700">Timeline engine</text>
+  <text x="700" y="350" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="21">Normalize clocks</text>
+  <text x="700" y="395" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="21">Deduplicate evidence</text>
+  <text x="700" y="440" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="21">Flag missing intervals</text>
+  <text x="1160" y="290" text-anchor="middle" fill="#c4b5fd" font-family="Arial" font-size="25" font-weight="700">Review-ready output</text>
+  <text x="1160" y="350" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="21">Ordered chronology</text>
+  <text x="1160" y="395" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="21">Evidence fingerprints</text>
+  <text x="1160" y="440" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="21">READY or REVIEW</text>
+  <path d="M410 390 H525" stroke="#60a5fa" stroke-width="5"/><path d="M510 375 L530 390 L510 405" fill="none" stroke="#60a5fa" stroke-width="5"/>
+  <path d="M870 390 H985" stroke="#5eead4" stroke-width="5"/><path d="M970 375 L990 390 L970 405" fill="none" stroke="#5eead4" stroke-width="5"/>
+  <rect x="250" y="635" width="900" height="82" rx="18" fill="#0b1727" stroke="#334155"/>
+  <text x="700" y="670" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="22" font-weight="700">Safety boundary</text>
+  <text x="700" y="702" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="19">Read-only evidence processing · no credentials · no remediation · human interpretation retained</text>
+</svg>
+
