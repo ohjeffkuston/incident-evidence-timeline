@@ -1,0 +1,16 @@
+{
+  "incident_id": "INC-2042",
+  "gap_threshold_seconds": 300,
+  "sources": [
+    {"name": "deployment-pipeline", "clock_offset_seconds": 30},
+    {"name": "cloudwatch", "clock_offset_seconds": 0},
+    {"name": "service-desk", "clock_offset_seconds": -15}
+  ],
+  "events": [
+    {"id": "deploy-882", "source": "deployment-pipeline", "timestamp": "2026-07-27T14:00:30Z", "severity": "info", "service": "checkout-api", "type": "deployment", "message": "Version 2.8.1 rollout started"},
+    {"id": "alarm-401", "source": "cloudwatch", "timestamp": "2026-07-27T14:01:12Z", "severity": "error", "service": "checkout-api", "type": "alarm", "message": "5xx error rate exceeded threshold"},
+    {"id": "ticket-77", "source": "service-desk", "timestamp": "2026-07-27T14:10:00Z", "severity": "critical", "service": "checkout-api", "type": "customer-impact", "message": "Customers cannot complete checkout"},
+    {"id": "rollback-883", "source": "deployment-pipeline", "timestamp": "2026-07-27T14:12:30Z", "severity": "warning", "service": "checkout-api", "type": "rollback", "message": "Rollback initiated"}
+  ]
+}
+
